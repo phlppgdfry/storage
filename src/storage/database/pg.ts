@@ -1602,7 +1602,7 @@ export class StoragePgDB implements Database {
       name,
       'id',
       { dontErrorOnEmpty: true },
-      currentVersion ?? null
+      currentVersion
     )
     return Boolean(exists)
   }
